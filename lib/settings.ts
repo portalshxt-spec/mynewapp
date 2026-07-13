@@ -3,11 +3,11 @@ import { db } from "./supabase";
 import type { BandMember, SiteSettings } from "./types";
 
 export const DEFAULT_BAND: BandMember[] = [
-  { name: "TSAPHON", role: "Bass — The Watcher", bio: "Eyes on every horizon. Holds the low end down like a vow.", image: "" },
-  { name: "MIPTACH", role: "Keys — The Key", bio: "Every locked door in Mainey City opens to the right chord. He knows them all.", image: "" },
-  { name: "RA'AM", role: "Drums — The Thunder", bio: "Storm patterns from the year 4009. You feel him before you hear him.", image: "" },
-  { name: "DATA ZAKAR", role: "Lead Guitar — The Time Traveler", bio: "Six strings across four thousand years. He remembers the future.", image: "" },
-  { name: "DROOPITER", role: "The Astral Architect — Host & Builder", bio: "Voice of the takeover. Built the tower, runs the signal, keeps the lights on.", image: "" },
+  { name: "TSAPHON", role: "Bass — The Watcher", bio: "First to sense trouble, last to power down. He sees what is coming, and his low end is the floor the whole broadcast stands on.", image: "" },
+  { name: "MIPTACH", role: "Keys — The Key", bio: "He opened every door they locked. When the Corporation seals a system, MIPTACH finds the chord it was waiting for.", image: "" },
+  { name: "RA'AM", role: "Drums — The Thunder", bio: "He does not talk much. His kick registers on seismographs, and while he plays, nobody can trace the signal.", image: "" },
+  { name: "DATA ZAKAR", role: "Lead Guitar — The Time Traveler", bio: "Every style, every era, every legend they tried to erase. He carries them all, and brings them back to air.", image: "" },
+  { name: "DROOPITER", role: "The Astral Architect", bio: "Overseer of the tech. Builder of the records. The voice of the broadcast, hosting from somewhere they will never find.", image: "" },
 ];
 
 export const DEFAULT_SETTINGS: SiteSettings = {
@@ -18,7 +18,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   footer_text: "BLakHarts. Stay Human.",
   lore_title: "The Year 4009",
   lore_text:
-    "The year is 4009. Mainey City runs on silence — every frequency licensed, every song approved, every heart on mute. Then one night the dial glitched. A dead tower on the edge of the grid lit up and would not go dark. BLakHarts took the signal. This is the takeover: a pirate radio broadcast fighting hate with love — from nowhere, heard everywhere.",
+    "The year is 4009. Two cities are all that is left of the Bay: Utopia City, the Corporation's spotless showroom, and Mainey City, where the old world still runs on recycled fuel and real memories. Every station on every dial belongs to T.H.E. Corporation, playing songs about nothing to a city kept comfortable and asleep. Then one night, every frequency changed at once. The BLakHarts took the airwaves to play songs about something: the truth. Fighting hate with love. No anger, no blades. And every listener who wakes up is one of us.",
   band_members: DEFAULT_BAND,
 };
 
