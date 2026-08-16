@@ -94,6 +94,59 @@ can be added as a third consumer of the same context — station blocks are just
 index ranges over the queue, and a ghost frequency is one more entry the skin
 chooses to reveal.
 
+## Miftach's Matrix (`/matrix`)
+
+A single-player arcade minigame built to the *Miftach's Matrix* GDD v1.0 — ten
+layers, ~12 minutes for a full run, 60fps target on desktop and modern mobile.
+You play the intrusion payload MIFTACH compiled, riding the inside of a live
+data conduit. It lives outside the `(site)` layout group because it is a
+full-bleed game surface with no header or footer.
+
+### Layout
+
+| Path | Contents |
+| --- | --- |
+| `lib/matrix/config.ts` | World constants and the ten layer configs. The tuning spine. |
+| `lib/matrix/catalog.ts` | The 21-entity catalog. Shape language, Trace values, gating. |
+| `lib/matrix/chunks.json` | 81 hand-authored chunks (8/layer + 6 shared breath chunks). |
+| `lib/matrix/generator.ts` | Seeded chunk shuffler against the difficulty budget. |
+| `lib/matrix/sim.ts` | Movement, swept cylindrical collision, Trace / Cycles / combo. No renderer. |
+| `lib/matrix/render/` | Three.js: tube shader, instanced entities, Keyshard, post stack. |
+| `lib/matrix/game.ts` | Frame loop, phase machine, wiring. |
+| `lib/matrix/verify.ts` | Headless tuning harness — `npm run matrix:verify`. |
+
+### Tuning
+
+Everything is driven by two numbers in `config.ts`: forward speed scales
+`1.1^(n-1)` and angular speed scales `1.08^(n-1)`. Angular speed sitting
+*slightly under* forward speed is what tightens the world ~2% a layer without
+making clean lines impossible. Tune those before anything else.
+
+`npm run matrix:verify` runs all ten layers headless and prints score, hazard
+density, average chunk cost against budget, and clear times, while asserting the
+library's invariants. It needs no GPU, so it is the fastest way to feel out a
+change.
+
+Chunks are authored in world units at layer-1 speed and scaled by
+`speed / 22` at generation time, so an authored phrase keeps its *duration*
+across all ten layers instead of blowing past 2.4× faster at Root Zero.
+
+### Audio
+
+Fully synthesised in `lib/matrix/audio.ts` — the game ships with a real adaptive
+score and zero bytes of audio assets. Tempo tracks the speed curve
+(`100 × 1.1^(n-1)`, landing at 236 BPM at Root Zero). `MatrixAudio.loadStems()`
+is the hook for dropping in ten cuts from the existing instrumental catalogue;
+the adaptive mixing, tempo map and SFX bus stay as they are.
+
+### Accessibility
+
+Shape carries all hazard/collect information and colour is redundant. Reduced
+motion kills chromatic aberration, camera roll and shake without touching
+gameplay. Assist mode caps the speed step at 1.05/layer and halves Trace gain.
+Every major hazard fires a distinct pre-warning cue 0.8s out. Full key
+remapping, gamepad, touch and mouse are all supported.
+
 ## Local development
 
 ```bash

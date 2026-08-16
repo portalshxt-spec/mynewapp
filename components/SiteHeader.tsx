@@ -5,6 +5,7 @@ const NAV = [
   { href: "/", label: "SIGNAL" },
   { href: "/band", label: "THE BAND" },
   { href: "/store", label: "STORE" },
+  { href: "/matrix", label: "MATRIX" },
   { href: "/access", label: "ACCESS" },
 ];
 

@@ -88,6 +88,130 @@ input[type="range"].scrubber::-moz-range-thumb {
   box-shadow: 0 0 8px rgba(201, 169, 97, 0.7);
 }
 
+/* ---------------------------------------------------------------------------
+   MIFTACH'S MATRIX
+   Terse, system-log register. The pixel-mono HUD is the 1995 handshake; the
+   expanded grotesk on the titles is what says 2070.
+   --------------------------------------------------------------------------- */
+
+.mm-root {
+  font-family: var(--font-mm-body), ui-monospace, monospace;
+  color: #e6f1f5;
+}
+
+.mm-title {
+  font-family: var(--font-mm-title), "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 125;
+  font-weight: 700;
+  font-size: clamp(2.75rem, 11vw, 7rem);
+  line-height: 0.86;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 0 26px rgba(125, 232, 255, 0.35);
+}
+
+.mm-heading {
+  font-family: var(--font-mm-title), "Arial Narrow", sans-serif;
+  font-variation-settings: "wdth" 125;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 4.5vw, 2.5rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mm-sub {
+  margin-top: 1.25rem;
+  font-family: var(--font-mm-body), ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.9;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(230, 241, 245, 0.55);
+}
+
+.mm-stamp {
+  font-family: var(--font-mm-hud), ui-monospace, monospace;
+  font-size: 9px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(230, 241, 245, 0.4);
+}
+
+.mm-btn {
+  font-family: var(--font-mm-hud), ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(230, 241, 245, 0.85);
+  background: transparent;
+  transition: border-color 140ms ease, color 140ms ease, background-color 140ms ease;
+}
+.mm-btn:hover:not(:disabled) {
+  border-color: #7de8ff;
+  color: #ffffff;
+}
+.mm-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.mm-btn-primary {
+  border-color: #7de8ff;
+  color: #04121a;
+  background: #7de8ff;
+}
+.mm-btn-primary:hover:not(:disabled) {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #04121a;
+}
+
+.mm-cell {
+  font-family: var(--font-mm-hud), ui-monospace, monospace;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 0.55rem 0.4rem;
+  text-align: center;
+  transition: background-color 140ms ease;
+}
+.mm-cell:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.mm-cell:disabled {
+  cursor: not-allowed;
+}
+
+.mm-select {
+  font-family: var(--font-mm-hud), ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e6f1f5;
+  padding: 0.45rem 0.5rem;
+}
+
+/* The combo physically shakes apart when it breaks. */
+@keyframes mm-shake {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  25% { transform: translate(-3px, 1px) rotate(-2deg); opacity: 0.7; }
+  50% { transform: translate(3px, -2px) rotate(2deg); opacity: 0.85; }
+  75% { transform: translate(-2px, 2px) rotate(-1deg); opacity: 0.6; }
+  100% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+}
+.mm-shake {
+  animation: mm-shake 420ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mm-shake {
+    animation: none;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;

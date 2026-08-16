@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "matrix:verify": "tsc lib/matrix/verify.ts --outDir .matrix-verify --module commonjs --target es2020 --moduleResolution node --resolveJsonModule --esModuleInterop --skipLibCheck --strict && node .matrix-verify/verify.js"
   },
   "dependencies": {
     "@mux/mux-player-react": "^3.3.0",
@@ -15,12 +16,14 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "resend": "^4.0.0",
-    "stripe": "^18.0.0"
+    "stripe": "^18.0.0",
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.185.4",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",

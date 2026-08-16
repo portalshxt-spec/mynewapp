@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "breath-open-line",
+    "cost": 6,
+    "length": 190,
+    "minLevel": 1,
+    "tags": ["breath", "collect"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 4, "band": "MID", "trailTo": 10 },
+      { "t": "mote", "z": 110, "slot": 11, "band": "MID" },
+      { "t": "packet", "z": 120, "slot": 12, "band": "MID", "trailTo": 15 }
+    ]
+  },
+  {
+    "id": "breath-spiral",
+    "cost": 8,
+    "length": 210,
+    "minLevel": 1,
+    "tags": ["breath", "collect"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 0, "band": "MID", "trailTo": 6 },
+      { "t": "packet", "z": 100, "slot": 7, "band": "WALL", "trailTo": 12 },
+      { "t": "mote", "z": 186, "slot": 13, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "breath-dive",
+    "cost": 8,
+    "length": 200,
+    "minLevel": 1,
+    "tags": ["breath", "collect", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 8, "band": "WALL", "trailTo": 11 },
+      { "t": "packet", "z": 60, "slot": 11, "band": "MID", "trailTo": 14 },
+      { "t": "packet", "z": 120, "slot": 14, "band": "CORE", "trailTo": 1 },
+      { "t": "mote", "z": 180, "slot": 1, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "breath-ladder",
+    "cost": 6,
+    "length": 180,
+    "minLevel": 1,
+    "tags": ["breath", "collect", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 2, "band": "CORE", "trailTo": 5 },
+      { "t": "packet", "z": 60, "slot": 5, "band": "MID", "trailTo": 8 },
+      { "t": "packet", "z": 120, "slot": 8, "band": "WALL", "trailTo": 11 }
+    ]
+  },
+  {
+    "id": "breath-wide-arc",
+    "cost": 7,
+    "length": 210,
+    "minLevel": 1,
+    "tags": ["breath", "collect", "arc"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 12, "band": "MID", "trailTo": 4 },
+      { "t": "mote", "z": 140, "slot": 5, "band": "MID" },
+      { "t": "mote", "z": 170, "slot": 6, "band": "MID" }
+    ]
+  },
+  {
+    "id": "breath-recover",
+    "cost": 5,
+    "length": 176,
+    "minLevel": 1,
+    "tags": ["breath", "collect"],
+    "entities": [
+      { "t": "mote", "z": 20, "slot": 3, "band": "MID" },
+      { "t": "mote", "z": 70, "slot": 7, "band": "MID" },
+      { "t": "mote", "z": 120, "slot": 11, "band": "MID" },
+      { "t": "packet", "z": 140, "slot": 11, "band": "MID", "trailTo": 14 }
+    ]
+  },
+
+  {
+    "id": "edge-first-contact",
+    "cost": 12,
+    "length": 200,
+    "minLevel": 1,
+    "tags": ["tripwire"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 6, "band": "MID", "trailTo": 10 },
+      { "t": "tripwire", "z": 90, "slots": [10, 11, 12, 13], "band": "MID" },
+      { "t": "packet", "z": 130, "slot": 2, "band": "MID", "trailTo": 5 }
+    ]
+  },
+  {
+    "id": "edge-debris-field",
+    "cost": 16,
+    "length": 220,
+    "minLevel": 1,
+    "tags": ["debris"],
+    "entities": [
+      { "t": "debris", "z": 40, "slot": 3, "band": "MID", "drift": 8 },
+      { "t": "debris", "z": 70, "slot": 9, "band": "MID", "drift": -8 },
+      { "t": "packet", "z": 100, "slot": 12, "band": "MID", "trailTo": 15 },
+      { "t": "debris", "z": 160, "slot": 1, "band": "MID", "drift": 12 },
+      { "t": "mote", "z": 200, "slot": 3, "band": "MID" }
+    ]
+  },
+  {
+    "id": "edge-wire-step",
+    "cost": 20,
+    "length": 240,
+    "minLevel": 1,
+    "tags": ["tripwire", "arc"],
+    "entities": [
+      { "t": "tripwire", "z": 40, "slots": [0, 1, 2, 3], "band": "WALL" },
+      { "t": "packet", "z": 60, "slot": 8, "band": "WALL", "trailTo": 11 },
+      { "t": "tripwire", "z": 130, "slots": [8, 9, 10, 11], "band": "WALL" },
+      { "t": "packet", "z": 150, "slot": 0, "band": "WALL", "trailTo": 3 },
+      { "t": "tripwire", "z": 210, "slots": [2, 3, 4, 5], "band": "MID" }
+    ]
+  },
+  {
+    "id": "edge-two-lane",
+    "cost": 18,
+    "length": 210,
+    "minLevel": 1,
+    "tags": ["tripwire"],
+    "entities": [
+      { "t": "tripwire", "z": 50, "slots": [4, 5, 6, 7], "band": "MID" },
+      { "t": "tripwire", "z": 50, "slots": [12, 13, 14, 15], "band": "MID" },
+      { "t": "packet", "z": 80, "slot": 9, "band": "MID", "trailTo": 11 },
+      { "t": "debris", "z": 140, "slot": 10, "band": "MID", "drift": -10 },
+      { "t": "packet", "z": 170, "slot": 2, "band": "MID", "trailTo": 4 }
+    ]
+  },
+  {
+    "id": "edge-drift-cross",
+    "cost": 22,
+    "length": 230,
+    "minLevel": 1,
+    "tags": ["debris"],
+    "entities": [
+      { "t": "debris", "z": 30, "slot": 2, "band": "MID", "drift": 14 },
+      { "t": "debris", "z": 30, "slot": 10, "band": "MID", "drift": -14 },
+      { "t": "packet", "z": 90, "slot": 6, "band": "MID", "trailTo": 9 },
+      { "t": "debris", "z": 150, "slot": 6, "band": "WALL", "drift": 10 },
+      { "t": "mote", "z": 195, "slot": 9, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "edge-band-hop",
+    "cost": 24,
+    "length": 250,
+    "minLevel": 1,
+    "tags": ["tripwire", "radial"],
+    "entities": [
+      { "t": "tripwire", "z": 40, "slots": [6, 7, 8, 9], "band": "MID" },
+      { "t": "packet", "z": 70, "slot": 8, "band": "CORE", "trailTo": 11 },
+      { "t": "tripwire", "z": 140, "slots": [10, 11, 12, 13], "band": "CORE" },
+      { "t": "packet", "z": 165, "slot": 12, "band": "WALL", "trailTo": 15 },
+      { "t": "debris", "z": 220, "slot": 15, "band": "WALL", "drift": -8 }
+    ]
+  },
+  {
+    "id": "edge-pressure",
+    "cost": 28,
+    "length": 250,
+    "minLevel": 1,
+    "tags": ["tripwire", "debris"],
+    "entities": [
+      { "t": "debris", "z": 20, "slot": 5, "band": "MID", "drift": 10 },
+      { "t": "tripwire", "z": 70, "slots": [8, 9, 10, 11], "band": "MID" },
+      { "t": "packet", "z": 95, "slot": 13, "band": "MID", "trailTo": 0 },
+      { "t": "debris", "z": 150, "slot": 1, "band": "MID", "drift": -12 },
+      { "t": "tripwire", "z": 200, "slots": [0, 1, 2, 3], "band": "WALL" },
+      { "t": "mote", "z": 240, "slot": 6, "band": "MID" }
+    ]
+  },
+  {
+    "id": "edge-long-line",
+    "cost": 14,
+    "length": 260,
+    "minLevel": 1,
+    "tags": ["collect", "arc"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 0, "band": "MID", "trailTo": 7 },
+      { "t": "debris", "z": 120, "slot": 8, "band": "MID", "drift": 6 },
+      { "t": "packet", "z": 150, "slot": 9, "band": "MID", "trailTo": 14 },
+      { "t": "mote", "z": 240, "slot": 15, "band": "MID" }
+    ]
+  },
+
+  {
+    "id": "dmz-first-ring",
+    "cost": 26,
+    "length": 220,
+    "minLevel": 2,
+    "tags": ["firewall"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 4, "band": "MID", "trailTo": 6 },
+      { "t": "firewall", "z": 90, "open": [6, 7], "spin": 40 },
+      { "t": "packet", "z": 120, "slot": 7, "band": "MID", "trailTo": 10 },
+      { "t": "mote", "z": 190, "slot": 11, "band": "MID" }
+    ]
+  },
+  {
+    "id": "thread-the-needle",
+    "cost": 34,
+    "length": 96,
+    "minLevel": 2,
+    "tags": ["firewall", "arc"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 4, "band": "MID", "trailTo": 8 },
+      { "t": "firewall", "z": 32, "open": [6, 7], "spin": 40 },
+      { "t": "tripwire", "z": 64, "slots": [10, 11, 12, 13, 14], "band": "WALL" },
+      { "t": "zeroday", "z": 80, "slot": 12, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "dmz-double-gate",
+    "cost": 38,
+    "length": 260,
+    "minLevel": 2,
+    "tags": ["firewall"],
+    "entities": [
+      { "t": "firewall", "z": 50, "open": [2, 3], "spin": -40 },
+      { "t": "packet", "z": 80, "slot": 3, "band": "MID", "trailTo": 7 },
+      { "t": "firewall", "z": 160, "open": [8, 9], "spin": 40 },
+      { "t": "zeroday", "z": 200, "slot": 9, "band": "CORE" },
+      { "t": "mote", "z": 240, "slot": 10, "band": "MID" }
+    ]
+  },
+  {
+    "id": "dmz-zero-day-dive",
+    "cost": 30,
+    "length": 240,
+    "minLevel": 2,
+    "tags": ["zeroday", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 12, "band": "WALL", "trailTo": 15 },
+      { "t": "tripwire", "z": 80, "slots": [14, 15, 0, 1], "band": "WALL" },
+      { "t": "zeroday", "z": 120, "slot": 15, "band": "CORE" },
+      { "t": "packet", "z": 150, "slot": 0, "band": "MID", "trailTo": 3 },
+      { "t": "debris", "z": 210, "slot": 4, "band": "MID", "drift": 8 }
+    ]
+  },
+  {
+    "id": "dmz-spin-flip",
+    "cost": 40,
+    "length": 280,
+    "minLevel": 2,
+    "tags": ["firewall", "arc"],
+    "entities": [
+      { "t": "firewall", "z": 40, "open": [0, 1], "spin": 40 },
+      { "t": "packet", "z": 70, "slot": 1, "band": "MID", "trailTo": 5 },
+      { "t": "firewall", "z": 150, "open": [10, 11], "spin": -40 },
+      { "t": "packet", "z": 185, "slot": 11, "band": "MID", "trailTo": 14 },
+      { "t": "mote", "z": 260, "slot": 15, "band": "MID" }
+    ]
+  },
+  {
+    "id": "dmz-wire-and-ring",
+    "cost": 36,
+    "length": 250,
+    "minLevel": 2,
+    "tags": ["firewall", "tripwire"],
+    "entities": [
+      { "t": "tripwire", "z": 30, "slots": [4, 5, 6, 7], "band": "MID" },
+      { "t": "packet", "z": 60, "slot": 10, "band": "MID", "trailTo": 13 },
+      { "t": "firewall", "z": 140, "open": [13, 14], "spin": 40 },
+      { "t": "zeroday", "z": 180, "slot": 14, "band": "CORE" },
+      { "t": "debris", "z": 230, "slot": 2, "band": "MID", "drift": -10 }
+    ]
+  },
+  {
+    "id": "dmz-breath-into-ring",
+    "cost": 22,
+    "length": 230,
+    "minLevel": 2,
+    "tags": ["firewall", "collect"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 8, "band": "MID", "trailTo": 13 },
+      { "t": "mote", "z": 100, "slot": 14, "band": "MID" },
+      { "t": "firewall", "z": 160, "open": [14, 15], "spin": -40 },
+      { "t": "packet", "z": 190, "slot": 15, "band": "MID", "trailTo": 2 }
+    ]
+  },
+  {
+    "id": "dmz-tight",
+    "cost": 44,
+    "length": 300,
+    "minLevel": 2,
+    "tags": ["firewall", "dense"],
+    "entities": [
+      { "t": "firewall", "z": 40, "open": [6, 7], "spin": 40 },
+      { "t": "debris", "z": 90, "slot": 7, "band": "MID", "drift": 12 },
+      { "t": "firewall", "z": 150, "open": [3, 4], "spin": -40 },
+      { "t": "tripwire", "z": 210, "slots": [3, 4, 5, 6], "band": "CORE" },
+      { "t": "zeroday", "z": 250, "slot": 4, "band": "WALL" },
+      { "t": "mote", "z": 285, "slot": 6, "band": "MID" }
+    ]
+  },
+
+  {
+    "id": "auth-first-sweep",
+    "cost": 28,
+    "length": 240,
+    "minLevel": 3,
+    "tags": ["ids"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 2, "band": "MID", "trailTo": 6 },
+      { "t": "ids", "z": 110, "slot": 0, "spin": 90 },
+      { "t": "packet", "z": 150, "slot": 7, "band": "MID", "trailTo": 10 },
+      { "t": "scrub", "z": 220, "slot": 11, "band": "MID" }
+    ]
+  },
+  {
+    "id": "auth-sweep-pair",
+    "cost": 42,
+    "length": 280,
+    "minLevel": 3,
+    "tags": ["ids", "timing"],
+    "entities": [
+      { "t": "ids", "z": 50, "slot": 0, "spin": 90 },
+      { "t": "packet", "z": 90, "slot": 5, "band": "MID", "trailTo": 8 },
+      { "t": "ids", "z": 170, "slot": 8, "spin": -90 },
+      { "t": "scrub", "z": 230, "slot": 9, "band": "MID" },
+      { "t": "mote", "z": 270, "slot": 11, "band": "MID" }
+    ]
+  },
+  {
+    "id": "auth-root-run",
+    "cost": 34,
+    "length": 270,
+    "minLevel": 3,
+    "tags": ["roottoken", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 10, "band": "WALL", "trailTo": 14 },
+      { "t": "tripwire", "z": 90, "slots": [13, 14, 15, 0], "band": "WALL" },
+      { "t": "roottoken", "z": 140, "slot": 14, "band": "CORE" },
+      { "t": "packet", "z": 175, "slot": 15, "band": "MID", "trailTo": 3 },
+      { "t": "debris", "z": 250, "slot": 4, "band": "MID", "drift": -8 }
+    ]
+  },
+  {
+    "id": "auth-scrub-lane",
+    "cost": 26,
+    "length": 240,
+    "minLevel": 3,
+    "tags": ["scrub"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 6, "band": "MID", "trailTo": 10 },
+      { "t": "scrub", "z": 100, "slot": 11, "band": "MID" },
+      { "t": "debris", "z": 150, "slot": 12, "band": "MID", "drift": 10 },
+      { "t": "scrub", "z": 200, "slot": 14, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "auth-ring-and-sweep",
+    "cost": 46,
+    "length": 300,
+    "minLevel": 3,
+    "tags": ["ids", "firewall"],
+    "entities": [
+      { "t": "firewall", "z": 40, "open": [8, 9], "spin": 40 },
+      { "t": "packet", "z": 80, "slot": 9, "band": "MID", "trailTo": 12 },
+      { "t": "ids", "z": 170, "slot": 4, "spin": 100 },
+      { "t": "zeroday", "z": 230, "slot": 13, "band": "CORE" },
+      { "t": "mote", "z": 280, "slot": 15, "band": "MID" }
+    ]
+  },
+  {
+    "id": "auth-timing-gate",
+    "cost": 38,
+    "length": 260,
+    "minLevel": 3,
+    "tags": ["ids", "timing"],
+    "entities": [
+      { "t": "ids", "z": 60, "slot": 8, "spin": -110 },
+      { "t": "packet", "z": 110, "slot": 12, "band": "MID", "trailTo": 15 },
+      { "t": "tripwire", "z": 180, "slots": [15, 0, 1, 2], "band": "MID" },
+      { "t": "scrub", "z": 230, "slot": 3, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "auth-credential-dive",
+    "cost": 40,
+    "length": 280,
+    "minLevel": 3,
+    "tags": ["roottoken", "ids"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 4, "band": "WALL", "trailTo": 8 },
+      { "t": "tripwire", "z": 90, "slots": [8, 9, 10, 11], "band": "WALL" },
+      { "t": "roottoken", "z": 140, "slot": 10, "band": "CORE" },
+      { "t": "ids", "z": 200, "slot": 2, "spin": 90 },
+      { "t": "mote", "z": 265, "slot": 6, "band": "MID" }
+    ]
+  },
+  {
+    "id": "auth-pressure",
+    "cost": 48,
+    "length": 310,
+    "minLevel": 3,
+    "tags": ["ids", "firewall", "dense"],
+    "entities": [
+      { "t": "ids", "z": 40, "slot": 0, "spin": 120 },
+      { "t": "debris", "z": 100, "slot": 6, "band": "MID", "drift": 12 },
+      { "t": "firewall", "z": 160, "open": [1, 2], "spin": -40 },
+      { "t": "packet", "z": 200, "slot": 2, "band": "MID", "trailTo": 6 },
+      { "t": "scrub", "z": 270, "slot": 7, "band": "MID" }
+    ]
+  },
+
+  {
+    "id": "user-first-socket",
+    "cost": 24,
+    "length": 230,
+    "minLevel": 4,
+    "tags": ["socket"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 2, "band": "MID", "trailTo": 5 },
+      { "t": "socket", "z": 100, "slot": 6, "band": "MID" },
+      { "t": "packet", "z": 140, "slot": 7, "band": "MID", "trailTo": 10 },
+      { "t": "mote", "z": 210, "slot": 11, "band": "MID" }
+    ]
+  },
+  {
+    "id": "user-honeypot-tell",
+    "cost": 32,
+    "length": 250,
+    "minLevel": 4,
+    "tags": ["honeypot"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 12, "band": "MID", "trailTo": 15 },
+      { "t": "zeroday", "z": 90, "slot": 1, "band": "CORE" },
+      { "t": "honeypot", "z": 150, "slot": 5, "band": "CORE" },
+      { "t": "packet", "z": 190, "slot": 6, "band": "MID", "trailTo": 9 }
+    ]
+  },
+  {
+    "id": "user-decoy-pair",
+    "cost": 40,
+    "length": 280,
+    "minLevel": 4,
+    "tags": ["honeypot", "socket"],
+    "entities": [
+      { "t": "honeypot", "z": 60, "slot": 3, "band": "MID" },
+      { "t": "zeroday", "z": 60, "slot": 11, "band": "MID" },
+      { "t": "packet", "z": 110, "slot": 11, "band": "MID", "trailTo": 14 },
+      { "t": "socket", "z": 200, "slot": 15, "band": "MID" },
+      { "t": "mote", "z": 260, "slot": 2, "band": "MID" }
+    ]
+  },
+  {
+    "id": "user-socket-chain",
+    "cost": 34,
+    "length": 290,
+    "minLevel": 4,
+    "tags": ["socket", "arc"],
+    "entities": [
+      { "t": "socket", "z": 40, "slot": 4, "band": "MID" },
+      { "t": "packet", "z": 80, "slot": 5, "band": "MID", "trailTo": 8 },
+      { "t": "socket", "z": 160, "slot": 9, "band": "WALL" },
+      { "t": "packet", "z": 200, "slot": 10, "band": "WALL", "trailTo": 13 },
+      { "t": "debris", "z": 265, "slot": 14, "band": "WALL", "drift": -10 }
+    ]
+  },
+  {
+    "id": "user-app-noise",
+    "cost": 44,
+    "length": 300,
+    "minLevel": 4,
+    "tags": ["honeypot", "dense"],
+    "entities": [
+      { "t": "debris", "z": 30, "slot": 7, "band": "MID", "drift": 10 },
+      { "t": "tripwire", "z": 80, "slots": [10, 11, 12, 13], "band": "MID" },
+      { "t": "honeypot", "z": 140, "slot": 12, "band": "CORE" },
+      { "t": "packet", "z": 175, "slot": 13, "band": "MID", "trailTo": 0 },
+      { "t": "firewall", "z": 250, "open": [0, 1], "spin": 40 }
+    ]
+  },
+  {
+    "id": "user-fast-socket",
+    "cost": 38,
+    "length": 270,
+    "minLevel": 4,
+    "tags": ["socket", "ids"],
+    "entities": [
+      { "t": "ids", "z": 50, "slot": 6, "spin": 100 },
+      { "t": "socket", "z": 130, "slot": 12, "band": "MID" },
+      { "t": "packet", "z": 170, "slot": 13, "band": "MID", "trailTo": 0 },
+      { "t": "honeypot", "z": 240, "slot": 2, "band": "MID" }
+    ]
+  },
+  {
+    "id": "user-trust-break",
+    "cost": 46,
+    "length": 310,
+    "minLevel": 4,
+    "tags": ["honeypot", "firewall"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 8, "band": "MID", "trailTo": 12 },
+      { "t": "honeypot", "z": 100, "slot": 13, "band": "MID" },
+      { "t": "zeroday", "z": 100, "slot": 5, "band": "MID" },
+      { "t": "firewall", "z": 190, "open": [5, 6], "spin": -40 },
+      { "t": "scrub", "z": 260, "slot": 6, "band": "MID" }
+    ]
+  },
+  {
+    "id": "user-layered",
+    "cost": 50,
+    "length": 320,
+    "minLevel": 4,
+    "tags": ["socket", "honeypot", "dense"],
+    "entities": [
+      { "t": "firewall", "z": 40, "open": [12, 13], "spin": 40 },
+      { "t": "socket", "z": 120, "slot": 13, "band": "MID" },
+      { "t": "ids", "z": 200, "slot": 4, "spin": -110 },
+      { "t": "honeypot", "z": 270, "slot": 8, "band": "CORE" },
+      { "t": "mote", "z": 305, "slot": 10, "band": "MID" }
+    ]
+  },
+
+  {
+    "id": "vault-first-wall",
+    "cost": 30,
+    "length": 250,
+    "minLevel": 5,
+    "tags": ["hashwall", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 4, "band": "MID", "trailTo": 7 },
+      { "t": "hashwall", "z": 110, "openBand": "MID" },
+      { "t": "packet", "z": 150, "slot": 8, "band": "MID", "trailTo": 11 },
+      { "t": "cert", "z": 220, "slot": 12, "band": "MID" }
+    ]
+  },
+  {
+    "id": "vault-radial-forced",
+    "cost": 42,
+    "length": 290,
+    "minLevel": 5,
+    "tags": ["hashwall", "radial"],
+    "entities": [
+      { "t": "hashwall", "z": 50, "openBand": "CORE" },
+      { "t": "packet", "z": 90, "slot": 6, "band": "CORE", "trailTo": 9 },
+      { "t": "hashwall", "z": 180, "openBand": "WALL" },
+      { "t": "packet", "z": 220, "slot": 10, "band": "WALL", "trailTo": 13 },
+      { "t": "mote", "z": 280, "slot": 14, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "vault-throttle",
+    "cost": 36,
+    "length": 280,
+    "minLevel": 5,
+    "tags": ["ratelimit", "radial"],
+    "entities": [
+      { "t": "ratelimit", "z": 60 },
+      { "t": "packet", "z": 60, "slot": 3, "band": "CORE", "trailTo": 7 },
+      { "t": "packet", "z": 150, "slot": 8, "band": "WALL", "trailTo": 12 },
+      { "t": "cert", "z": 230, "slot": 13, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "vault-wall-and-throttle",
+    "cost": 48,
+    "length": 310,
+    "minLevel": 5,
+    "tags": ["hashwall", "ratelimit"],
+    "entities": [
+      { "t": "hashwall", "z": 50, "openBand": "WALL" },
+      { "t": "ratelimit", "z": 130 },
+      { "t": "packet", "z": 140, "slot": 2, "band": "WALL", "trailTo": 6 },
+      { "t": "hashwall", "z": 250, "openBand": "CORE" },
+      { "t": "zeroday", "z": 290, "slot": 7, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "vault-cert-run",
+    "cost": 34,
+    "length": 260,
+    "minLevel": 5,
+    "tags": ["cert", "hashwall"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 10, "band": "MID", "trailTo": 14 },
+      { "t": "cert", "z": 90, "slot": 15, "band": "MID" },
+      { "t": "hashwall", "z": 170, "openBand": "MID" },
+      { "t": "scrub", "z": 230, "slot": 1, "band": "MID" }
+    ]
+  },
+  {
+    "id": "vault-storage-dense",
+    "cost": 52,
+    "length": 330,
+    "minLevel": 5,
+    "tags": ["hashwall", "ratelimit", "dense"],
+    "entities": [
+      { "t": "firewall", "z": 40, "open": [2, 3], "spin": -40 },
+      { "t": "hashwall", "z": 130, "openBand": "CORE" },
+      { "t": "packet", "z": 175, "slot": 4, "band": "CORE", "trailTo": 8 },
+      { "t": "ratelimit", "z": 250 },
+      { "t": "cert", "z": 320, "slot": 9, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "vault-sweep-wall",
+    "cost": 46,
+    "length": 300,
+    "minLevel": 5,
+    "tags": ["hashwall", "ids"],
+    "entities": [
+      { "t": "ids", "z": 50, "slot": 12, "spin": 110 },
+      { "t": "hashwall", "z": 160, "openBand": "WALL" },
+      { "t": "packet", "z": 200, "slot": 14, "band": "WALL", "trailTo": 2 },
+      { "t": "debris", "z": 270, "slot": 3, "band": "WALL", "drift": 10 }
+    ]
+  },
+  {
+    "id": "vault-tight-radial",
+    "cost": 54,
+    "length": 340,
+    "minLevel": 5,
+    "tags": ["hashwall", "honeypot", "dense"],
+    "entities": [
+      { "t": "hashwall", "z": 40, "openBand": "MID" },
+      { "t": "tripwire", "z": 100, "slots": [4, 5, 6, 7], "band": "MID" },
+      { "t": "hashwall", "z": 180, "openBand": "CORE" },
+      { "t": "honeypot", "z": 240, "slot": 8, "band": "CORE" },
+      { "t": "zeroday", "z": 240, "slot": 0, "band": "CORE" },
+      { "t": "cert", "z": 320, "slot": 2, "band": "MID" }
+    ]
+  },
+
+  {
+    "id": "ring0-first-ice",
+    "cost": 34,
+    "length": 260,
+    "minLevel": 6,
+    "tags": ["ice"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 6, "band": "MID", "trailTo": 9 },
+      { "t": "ice", "z": 120, "slot": 10 },
+      { "t": "packet", "z": 180, "slot": 12, "band": "MID", "trailTo": 15 },
+      { "t": "mote", "z": 240, "slot": 0, "band": "MID" }
+    ]
+  },
+  {
+    "id": "ring0-void-run",
+    "cost": 38,
+    "length": 280,
+    "minLevel": 6,
+    "tags": ["nullvoid", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 2, "band": "WALL", "trailTo": 5 },
+      { "t": "nullvoid", "z": 110, "slots": [6, 7] },
+      { "t": "packet", "z": 180, "slot": 8, "band": "MID", "trailTo": 11 },
+      { "t": "scrub", "z": 250, "slot": 12, "band": "MID" }
+    ]
+  },
+  {
+    "id": "ring0-bait",
+    "cost": 46,
+    "length": 300,
+    "minLevel": 6,
+    "tags": ["ice", "arc"],
+    "entities": [
+      { "t": "ice", "z": 60, "slot": 4 },
+      { "t": "packet", "z": 130, "slot": 8, "band": "MID", "trailTo": 11 },
+      { "t": "ice", "z": 210, "slot": 12 },
+      { "t": "zeroday", "z": 280, "slot": 0, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "ring0-kernel-wall",
+    "cost": 52,
+    "length": 320,
+    "minLevel": 6,
+    "tags": ["ice", "hashwall", "nullvoid"],
+    "entities": [
+      { "t": "hashwall", "z": 50, "openBand": "CORE" },
+      { "t": "ice", "z": 140, "slot": 8 },
+      { "t": "packet", "z": 210, "slot": 10, "band": "CORE", "trailTo": 13 },
+      { "t": "nullvoid", "z": 270, "slots": [14, 15] }
+    ]
+  },
+  {
+    "id": "ring0-void-and-ring",
+    "cost": 50,
+    "length": 310,
+    "minLevel": 6,
+    "tags": ["nullvoid", "firewall", "ice"],
+    "entities": [
+      { "t": "nullvoid", "z": 40, "slots": [0, 1] },
+      { "t": "firewall", "z": 130, "open": [4, 5], "spin": 40 },
+      { "t": "packet", "z": 170, "slot": 5, "band": "MID", "trailTo": 8 },
+      { "t": "ice", "z": 250, "slot": 9 },
+      { "t": "mote", "z": 300, "slot": 11, "band": "MID" }
+    ]
+  },
+  {
+    "id": "ring0-double-void",
+    "cost": 44,
+    "length": 290,
+    "minLevel": 6,
+    "tags": ["nullvoid"],
+    "entities": [
+      { "t": "nullvoid", "z": 50, "slots": [2, 3] },
+      { "t": "packet", "z": 120, "slot": 6, "band": "MID", "trailTo": 9 },
+      { "t": "nullvoid", "z": 190, "slots": [10, 11] },
+      { "t": "cert", "z": 260, "slot": 13, "band": "MID" }
+    ]
+  },
+  {
+    "id": "ring0-sweep-lance",
+    "cost": 56,
+    "length": 340,
+    "minLevel": 6,
+    "tags": ["ice", "ids", "dense"],
+    "entities": [
+      { "t": "ids", "z": 50, "slot": 2, "spin": -120 },
+      { "t": "ice", "z": 150, "slot": 6 },
+      { "t": "packet", "z": 220, "slot": 9, "band": "MID", "trailTo": 13 },
+      { "t": "hashwall", "z": 300, "openBand": "WALL" }
+    ]
+  },
+  {
+    "id": "ring0-pressure",
+    "cost": 58,
+    "length": 350,
+    "minLevel": 6,
+    "tags": ["ice", "nullvoid", "dense"],
+    "entities": [
+      { "t": "ice", "z": 40, "slot": 12 },
+      { "t": "nullvoid", "z": 120, "slots": [14, 15] },
+      { "t": "firewall", "z": 210, "open": [6, 7], "spin": -40 },
+      { "t": "ice", "z": 290, "slot": 7 },
+      { "t": "zeroday", "z": 340, "slot": 9, "band": "CORE" }
+    ]
+  },
+
+  {
+    "id": "crypt-first-race",
+    "cost": 36,
+    "length": 270,
+    "minLevel": 7,
+    "tags": ["race"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 0, "band": "MID", "trailTo": 4 },
+      { "t": "race", "z": 120, "slot": 6, "phase": 0 },
+      { "t": "race", "z": 120, "slot": 8, "phase": 1 },
+      { "t": "packet", "z": 190, "slot": 9, "band": "MID", "trailTo": 13 }
+    ]
+  },
+  {
+    "id": "crypt-dense-line",
+    "cost": 30,
+    "length": 290,
+    "minLevel": 7,
+    "tags": ["collect", "dense"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 2, "band": "MID", "trailTo": 9 },
+      { "t": "mote", "z": 130, "slot": 10, "band": "MID" },
+      { "t": "packet", "z": 150, "slot": 10, "band": "WALL", "trailTo": 15 },
+      { "t": "mote", "z": 260, "slot": 1, "band": "WALL" }
+    ]
+  },
+  {
+    "id": "crypt-beacon-field",
+    "cost": 42,
+    "length": 300,
+    "minLevel": 7,
+    "tags": ["beacon"],
+    "entities": [
+      { "t": "beacon", "z": 80, "slot": 4 },
+      { "t": "packet", "z": 100, "slot": 10, "band": "MID", "trailTo": 14 },
+      { "t": "beacon", "z": 200, "slot": 12 },
+      { "t": "scrub", "z": 270, "slot": 2, "band": "MID" }
+    ]
+  },
+  {
+    "id": "crypt-race-pair",
+    "cost": 50,
+    "length": 320,
+    "minLevel": 7,
+    "tags": ["race", "timing"],
+    "entities": [
+      { "t": "race", "z": 60, "slot": 2, "phase": 0 },
+      { "t": "race", "z": 60, "slot": 4, "phase": 1 },
+      { "t": "packet", "z": 130, "slot": 8, "band": "MID", "trailTo": 12 },
+      { "t": "race", "z": 220, "slot": 12, "phase": 1 },
+      { "t": "race", "z": 220, "slot": 14, "phase": 0 },
+      { "t": "zeroday", "z": 300, "slot": 0, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "crypt-key-material",
+    "cost": 44,
+    "length": 300,
+    "minLevel": 7,
+    "tags": ["hashwall", "beacon", "radial"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 12, "band": "CORE", "trailTo": 0 },
+      { "t": "hashwall", "z": 110, "openBand": "CORE" },
+      { "t": "packet", "z": 150, "slot": 1, "band": "CORE", "trailTo": 5 },
+      { "t": "beacon", "z": 240, "slot": 7 },
+      { "t": "cert", "z": 290, "slot": 9, "band": "MID" }
+    ]
+  },
+  {
+    "id": "crypt-ice-race",
+    "cost": 56,
+    "length": 340,
+    "minLevel": 7,
+    "tags": ["race", "ice", "dense"],
+    "entities": [
+      { "t": "ice", "z": 50, "slot": 10 },
+      { "t": "race", "z": 150, "slot": 0, "phase": 0 },
+      { "t": "race", "z": 150, "slot": 2, "phase": 1 },
+      { "t": "packet", "z": 230, "slot": 5, "band": "MID", "trailTo": 9 },
+      { "t": "ids", "z": 310, "slot": 9, "spin": 120 }
+    ]
+  },
+  {
+    "id": "crypt-throttle-dense",
+    "cost": 48,
+    "length": 310,
+    "minLevel": 7,
+    "tags": ["ratelimit", "nullvoid"],
+    "entities": [
+      { "t": "ratelimit", "z": 50 },
+      { "t": "packet", "z": 60, "slot": 6, "band": "WALL", "trailTo": 12 },
+      { "t": "nullvoid", "z": 180, "slots": [13, 14] },
+      { "t": "packet", "z": 250, "slot": 0, "band": "MID", "trailTo": 4 }
+    ]
+  },
+  {
+    "id": "crypt-pressure",
+    "cost": 60,
+    "length": 360,
+    "minLevel": 7,
+    "tags": ["race", "beacon", "dense"],
+    "entities": [
+      { "t": "race", "z": 40, "slot": 8, "phase": 0 },
+      { "t": "race", "z": 40, "slot": 10, "phase": 1 },
+      { "t": "firewall", "z": 130, "open": [14, 15], "spin": 40 },
+      { "t": "beacon", "z": 220, "slot": 3 },
+      { "t": "ice", "z": 280, "slot": 5 },
+      { "t": "zeroday", "z": 350, "slot": 7, "band": "CORE" }
+    ]
+  },
+
+  {
+    "id": "consensus-first-bomb",
+    "cost": 38,
+    "length": 280,
+    "minLevel": 8,
+    "tags": ["logicbomb"],
+    "entities": [
+      { "t": "packet", "z": 0, "slot": 4, "band": "MID", "trailTo": 8 },
+      { "t": "logicbomb", "z": 130, "slot": 10 },
+      { "t": "packet", "z": 200, "slot": 13, "band": "MID", "trailTo": 0 },
+      { "t": "mote", "z": 265, "slot": 1, "band": "MID" }
+    ]
+  },
+  {
+    "id": "consensus-chase",
+    "cost": 46,
+    "length": 320,
+    "minLevel": 8,
+    "tags": ["gc", "chase"],
+    "entities": [
+      { "t": "gc", "z": 0 },
+      { "t": "packet", "z": 60, "slot": 2, "band": "MID", "trailTo": 8 },
+      { "t": "packet", "z": 180, "slot": 9, "band": "MID", "trailTo": 14 },
+      { "t": "mote", "z": 290, "slot": 15, "band": "MID" }
+    ]
+  },
+  {
+    "id": "consensus-bomb-pair",
+    "cost": 52,
+    "length": 330,
+    "minLevel": 8,
+    "tags": ["logicbomb"],
+    "entities": [
+      { "t": "logicbomb", "z": 50, "slot": 2 },
+      { "t": "packet", "z": 120, "slot": 7, "band": "MID", "trailTo": 11 },
+      { "t": "logicbomb", "z": 210, "slot": 11 },
+      { "t": "zeroday", "z": 300, "slot": 14, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "consensus-ledger-wall",
+    "cost": 54,
+    "length": 340,
+    "minLevel": 8,
+    "tags": ["logicbomb", "hashwall", "race"],
+    "entities": [
+      { "t": "hashwall", "z": 50, "openBand": "WALL" },
+      { "t": "logicbomb", "z": 150, "slot": 6 },
+      { "t": "packet", "z": 220, "slot": 10, "band": "WALL", "trailTo": 14 },
+      { "t": "race", "z": 300, "slot": 0, "phase": 0 },
+      { "t": "race", "z": 300, "slot": 2, "phase": 1 }
+    ]
+  },
+  {
+    "id": "consensus-chase-dense",
+    "cost": 58,
+    "length": 360,
+    "minLevel": 8,
+    "tags": ["gc", "chase", "dense"],
+    "entities": [
+      { "t": "gc", "z": 0 },
+      { "t": "firewall", "z": 80, "open": [4, 5], "spin": 40 },
+      { "t": "packet", "z": 130, "slot": 5, "band": "MID", "trailTo": 10 },
+      { "t": "logicbomb", "z": 240, "slot": 11 },
+      { "t": "packet", "z": 310, "slot": 14, "band": "MID", "trailTo": 2 }
+    ]
+  },
+  {
+    "id": "consensus-timed",
+    "cost": 50,
+    "length": 320,
+    "minLevel": 8,
+    "tags": ["logicbomb", "ice"],
+    "entities": [
+      { "t": "logicbomb", "z": 40, "slot": 12 },
+      { "t": "ice", "z": 130, "slot": 0 },
+      { "t": "packet", "z": 200, "slot": 3, "band": "MID", "trailTo": 7 },
+      { "t": "scrub", "z": 290, "slot": 8, "band": "MID" }
+    ]
+  },
+  {
+    "id": "consensus-void-bomb",
+    "cost": 56,
+    "length": 350,
+    "minLevel": 8,
+    "tags": ["logicbomb", "nullvoid", "beacon"],
+    "entities": [
+      { "t": "nullvoid", "z": 50, "slots": [8, 9] },
+      { "t": "logicbomb", "z": 160, "slot": 12 },
+      { "t": "packet", "z": 230, "slot": 15, "band": "MID", "trailTo": 3 },
+      { "t": "beacon", "z": 320, "slot": 5 }
+    ]
+  },
+  {
+    "id": "consensus-pressure",
+    "cost": 62,
+    "length": 370,
+    "minLevel": 8,
+    "tags": ["logicbomb", "race", "dense"],
+    "entities": [
+      { "t": "logicbomb", "z": 40, "slot": 6 },
+      { "t": "race", "z": 130, "slot": 10, "phase": 0 },
+      { "t": "race", "z": 130, "slot": 12, "phase": 1 },
+      { "t": "ids", "z": 230, "slot": 2, "spin": -130 },
+      { "t": "logicbomb", "z": 320, "slot": 4 },
+      { "t": "cert", "z": 365, "slot": 8, "band": "MID" }
+    ]
+  },
+
+  {
+    "id": "sentinel-first-lock",
+    "cost": 34,
+    "length": 300,
+    "minLevel": 9,
+    "tags": ["sentinel"],
+    "entities": [
+      { "t": "sentinel", "z": 60 },
+      { "t": "packet", "z": 100, "slot": 4, "band": "MID", "trailTo": 9 },
+      { "t": "packet", "z": 220, "slot": 10, "band": "MID", "trailTo": 14 }
+    ]
+  },
+  {
+    "id": "sentinel-break-arc",
+    "cost": 42,
+    "length": 330,
+    "minLevel": 9,
+    "tags": ["sentinel", "arc"],
+    "entities": [
+      { "t": "sentinel", "z": 50 },
+      { "t": "packet", "z": 90, "slot": 0, "band": "MID", "trailTo": 4 },
+      { "t": "scrub", "z": 200, "slot": 12, "band": "MID" },
+      { "t": "packet", "z": 250, "slot": 12, "band": "MID", "trailTo": 15 }
+    ]
+  },
+  {
+    "id": "sentinel-and-ice",
+    "cost": 50,
+    "length": 340,
+    "minLevel": 9,
+    "tags": ["sentinel", "ice"],
+    "entities": [
+      { "t": "sentinel", "z": 40 },
+      { "t": "ice", "z": 150, "slot": 8 },
+      { "t": "packet", "z": 230, "slot": 12, "band": "MID", "trailTo": 0 },
+      { "t": "zeroday", "z": 320, "slot": 2, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "sentinel-wall-lock",
+    "cost": 48,
+    "length": 330,
+    "minLevel": 9,
+    "tags": ["sentinel", "hashwall", "radial"],
+    "entities": [
+      { "t": "sentinel", "z": 40 },
+      { "t": "hashwall", "z": 140, "openBand": "CORE" },
+      { "t": "packet", "z": 190, "slot": 6, "band": "CORE", "trailTo": 10 },
+      { "t": "cert", "z": 300, "slot": 12, "band": "MID" }
+    ]
+  },
+  {
+    "id": "sentinel-quiet",
+    "cost": 26,
+    "length": 290,
+    "minLevel": 9,
+    "tags": ["sentinel", "collect"],
+    "entities": [
+      { "t": "sentinel", "z": 60 },
+      { "t": "packet", "z": 100, "slot": 8, "band": "MID", "trailTo": 14 },
+      { "t": "mote", "z": 240, "slot": 15, "band": "MID" }
+    ]
+  },
+  {
+    "id": "sentinel-double-pressure",
+    "cost": 56,
+    "length": 360,
+    "minLevel": 9,
+    "tags": ["sentinel", "firewall", "beacon"],
+    "entities": [
+      { "t": "sentinel", "z": 40 },
+      { "t": "firewall", "z": 140, "open": [10, 11], "spin": -40 },
+      { "t": "packet", "z": 190, "slot": 11, "band": "MID", "trailTo": 15 },
+      { "t": "beacon", "z": 290, "slot": 3 },
+      { "t": "scrub", "z": 350, "slot": 5, "band": "MID" }
+    ]
+  },
+  {
+    "id": "sentinel-race-lock",
+    "cost": 54,
+    "length": 350,
+    "minLevel": 9,
+    "tags": ["sentinel", "race"],
+    "entities": [
+      { "t": "sentinel", "z": 40 },
+      { "t": "race", "z": 150, "slot": 4, "phase": 0 },
+      { "t": "race", "z": 150, "slot": 6, "phase": 1 },
+      { "t": "packet", "z": 240, "slot": 10, "band": "MID", "trailTo": 14 },
+      { "t": "zeroday", "z": 340, "slot": 0, "band": "CORE" }
+    ]
+  },
+  {
+    "id": "sentinel-adaptive",
+    "cost": 60,
+    "length": 370,
+    "minLevel": 9,
+    "tags": ["sentinel", "logicbomb", "dense"],
+    "entities": [
+      { "t": "sentinel", "z": 40 },
+      { "t": "logicbomb", "z": 150, "slot": 12 },
+      { "t": "packet", "z": 230, "slot": 0, "band": "MID", "trailTo": 5 },
+      { "t": "ids", "z": 320, "slot": 6, "spin": 130 }
+    ]
+  },
+
+  {
+    "id": "root-recital-one",
+    "cost": 56,
+    "length": 350,
+    "minLevel": 10,
+    "tags": ["recital"],
+    "entities": [
+      { "t": "firewall", "z": 40, "open": [6, 7], "spin": 40 },
+      { "t": "ids", "z": 130, "slot": 0, "spin": 120 },
+      { "t": "socket", "z": 220, "slot": 10, "band": "MID" },
+      { "t": "hashwall", "z": 300, "openBand": "CORE" }
+    ]
+  },
+  {
+    "id": "root-recital-two",
+    "cost": 60,
+    "length": 360,
+    "minLevel": 10,
+    "tags": ["recital"],
+    "entities": [
+      { "t": "ice", "z": 40, "slot": 4 },
+      { "t": "nullvoid", "z": 120, "slots": [8, 9] },
+      { "t": "race", "z": 220, "slot": 12, "phase": 0 },
+      { "t": "race", "z": 220, "slot": 14, "phase": 1 },
+      { "t": "logicbomb", "z": 320, "slot": 2 }
+    ]
+  },
+  {
+    "id": "root-recital-three",
+    "cost": 64,
+    "length": 380,
+    "minLevel": 10,
+    "tags": ["recital", "chase"],
+    "entities": [
+      { "t": "sentinel", "z": 40 },
+      { "t": "gc", "z": 60 },
+      { "t": "packet", "z": 110, "slot": 6, "band": "MID", "trailTo": 12 },
+      { "t": "firewall", "z": 230, "open": [12, 13], "spin": -40 },
+      { "t": "zeroday", "z": 340, "slot": 14, "band": "CORE" }
+    ]
+  }
+]

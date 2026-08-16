@@ -25,3 +25,6 @@ next-env.d.ts
 
 # vercel
 .vercel
+
+# miftach's matrix — compiled output of the tuning harness
+/.matrix-verify
