@@ -102,6 +102,12 @@ You play the intrusion payload MIFTACH compiled, riding the inside of a live
 data conduit. It lives outside the `(site)` layout group because it is a
 full-bleed game surface with no header or footer.
 
+> **Picking this up cold?** Read
+> [`docs/MIFTACHS_MATRIX_HANDOFF.md`](docs/MIFTACHS_MATRIX_HANDOFF.md) first. It
+> carries the canon guardrails, the full tuning table, every design decision and
+> deviation with its reasoning, and a precise account of what is verified versus
+> what still needs real GPU hardware.
+
 ### Layout
 
 | Path | Contents |
